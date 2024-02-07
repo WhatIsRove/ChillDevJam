@@ -21,6 +21,17 @@ public class PlayerController : MonoBehaviour
     Vector3 moveInput;
     Rigidbody rb;
 
+    [Header("Grab")]
+    public InputActionReference grabAction;
+    public float grabDistance;
+    public LayerMask grabLayer;
+    public Transform grabPoint;
+
+    bool isGrabbing = false;
+    RaycastHit grabHit;
+    Grabbable grabbableObj;
+    
+
     void Start()
     {
         camera = Camera.main.transform.gameObject;
@@ -40,6 +51,27 @@ public class PlayerController : MonoBehaviour
 
         camera.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
         transform.rotation = Quaternion.Euler(0, rotation.y, 0);
+
+        grabAction.action.performed += _ => { isGrabbing = true; };
+        grabAction.action.canceled += _ => { isGrabbing = false; };
+
+        if (isGrabbing)
+        {
+            if (Physics.Raycast(camera.transform.position, camera.transform.forward, out grabHit, grabDistance, grabLayer) && grabbableObj == null)
+            {
+                if (grabHit.transform.TryGetComponent(out grabbableObj))
+                {
+                    grabbableObj.Grab(grabPoint);
+                }
+            }
+        } else
+        {
+            if (grabbableObj != null)
+            {
+                grabbableObj.Drop();
+                grabbableObj = null;
+            }
+        }
     }
 
     private void FixedUpdate()
