@@ -29,6 +29,7 @@ public class Grabbable : MonoBehaviour
     {
         this.grabPoint = grabPoint;
         rb.useGravity = false;
+        rb.drag = 5;
         grabbed = true;
     }
 
@@ -36,6 +37,7 @@ public class Grabbable : MonoBehaviour
     {
         this.grabPoint = null;
         rb.useGravity = true;
+        rb.drag = 0;
         grabbed = false;
     }
 }
