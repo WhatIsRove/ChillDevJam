@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 541287798638889147}
   - component: {fileID: 541287798638889146}
   m_Layer: 6
-  m_Name: WireBuilder
+  m_Name: SmallWireBuilder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   Notes2: Wire render settings in TubeRender.cs on WireRender object.
   usePhysics: 1
   maxDistanceWithSelectedPos: 0.01
-  segmentsSeparation: 0.1
+  segmentsSeparation: 0.05
   limitMax: 500
   segmentsRadius: 1.5
   currentDistanceToStartAnchor: 0
@@ -66,8 +66,8 @@ MonoBehaviour:
   startAnchorPoint: {fileID: 1229081711585430608, guid: 4da736580b202eb4486768be93599f10, type: 3}
   segment: {fileID: 4721452859494924073, guid: 849875b46444f03428e4827a73935668, type: 3}
   segmentNoPhysics: {fileID: 4721452859494924073, guid: 2f6f00131ed85584dbbee855f7fc0bb5, type: 3}
-  endAnchorPoint: {fileID: 2306256389110725653, guid: 559da952238d1e64c86a4d71f980a14b, type: 3}
-  plugObjt: {fileID: 3749660500698215857, guid: 1b6ad518bf036ee45b651ba015d0f3cf, type: 3}
+  endAnchorPoint: {fileID: 2306256389110725653, guid: 8a5e56d249f70a44f82bc769b725a494, type: 3}
+  plugObjt: {fileID: 3749660500698215857, guid: ad67439d38338f54b91aec080c715563, type: 3}
   selectPosition: {x: 0, y: 0, z: 0}
   mousePossHelper: {fileID: 541287800083086103}
   presetJoint: {fileID: 2655988077585873504, guid: abc25b6363fdfea44958d0fb6b73e3c5, type: 2}

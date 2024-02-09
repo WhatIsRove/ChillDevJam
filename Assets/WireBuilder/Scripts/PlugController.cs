@@ -21,6 +21,7 @@ public class PlugController : MonoBehaviour
     
     bool hasPlug = false;
     public bool wasPlugged = false;
+    public float replugDistance = 0.5f;
 
 
     private void OnTriggerEnter(Collider other)
@@ -62,7 +63,7 @@ public class PlugController : MonoBehaviour
             }
         }
 
-        if (Vector3.Distance(transform.position, endAnchor.position) > 0.5f && wasPlugged)
+        if (Vector3.Distance(transform.position, endAnchor.position) > replugDistance && wasPlugged)
         {
             wasPlugged = false;
         }
