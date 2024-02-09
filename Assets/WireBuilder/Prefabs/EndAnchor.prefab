@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f09afaaddd7c4b419a50aac2af07e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpSpeed: 60
+  grabSpeed: 60
   grabbed: 0
 --- !u!1 &2831689269844095545
 GameObject:

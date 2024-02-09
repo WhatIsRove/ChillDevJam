@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,69 +8,49 @@ public class MomoPuzzle : MonoBehaviour
 {
     public GameObject[] buttons;
 
-    public Material red;
-    public Material green;
+    public GameObject completionLight;
+
+    bool puzzleCompleted = false;
 
     List<int> buttonNums = new List<int>();
 
-    void Start()
+    public void AlternateButtons(int i)
     {
-    }
+        if (puzzleCompleted) return;
 
-    void Update()
-    {
-        
-    }
-
-    public void One()
-    {
-        buttonNums.Add(2);
-        buttonNums.Add(3);
-        AlternateButtons(buttonNums);
-    }
-
-    public void Two()
-    {
-        buttonNums.Add(1);
-        buttonNums.Add(4);
-        AlternateButtons(buttonNums);
-    }
-
-    public void Three()
-    {
-        buttonNums.Add(1);
-        buttonNums.Add(4);
-        buttonNums.Add(5);
-        AlternateButtons(buttonNums);
-    }
-
-    public void Four()
-    {
-        buttonNums.Add(2);
-        buttonNums.Add(3);
-        buttonNums.Add(6);
-        AlternateButtons(buttonNums);
-    }
-
-    public void Five()
-    {
-        buttonNums.Add(3);
-        buttonNums.Add(6);
-        AlternateButtons(buttonNums);
-    }
-
-    public void Six()
-    {
-        buttonNums.Add(4);
-        buttonNums.Add(5);
-        AlternateButtons(buttonNums);
-    }
-
-    void AlternateButtons(List<int> buttonNum)
-    {
-        foreach (int i in buttonNum)
+        switch (i)
         {
-            var currentButton = buttons[i - 1].GetComponent<CustomButton>();
+            case 1:
+                buttonNums.Add(2);
+                buttonNums.Add(3);
+                break;
+            case 2:
+                buttonNums.Add(1);
+                buttonNums.Add(4);
+                break;
+            case 3:
+                buttonNums.Add(1);
+                buttonNums.Add(4);
+                buttonNums.Add(5);
+                break;
+            case 4:
+                buttonNums.Add(2);
+                buttonNums.Add(3);
+                buttonNums.Add(6);
+                break;
+            case 5:
+                buttonNums.Add(3);
+                buttonNums.Add(6);
+                break;
+            case 6:
+                buttonNums.Add(4);
+                buttonNums.Add(5);
+                break;
+        }
+
+        foreach (int j in buttonNums)
+        {
+            var currentButton = buttons[j - 1].GetComponent<CustomButton>();
 
             if (currentButton.state)
             {
@@ -82,6 +63,24 @@ public class MomoPuzzle : MonoBehaviour
             }
         }
 
+        bool allDone = false;
+        foreach (GameObject go in buttons)
+        {
+            if (!go.GetComponent<CustomButton>().state)
+            {
+                allDone = false;
+                break;
+            } else
+            {
+                allDone = true;
+            }
+        }
+        if (allDone)
+        {
+            completionLight.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", Color.green);
+            puzzleCompleted = true;
+        }
+            
 
         buttonNums.Clear();
     }
