@@ -32,6 +32,8 @@ public class PlugController : MonoBehaviour
     public bool isOverload = false;
     public GameObject vfx;
 
+    public bool useSound = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Plug" && !hasPlug && !wasPlugged)
@@ -48,8 +50,18 @@ public class PlugController : MonoBehaviour
             endAnchor.rotation = transform.rotation;
 
             hasPlug = true;
-            if (isPuzzle) GameObject.FindObjectOfType<PlugPuzzle>().CheckPlug(endAnchor, currentPlug);
+            if (isPuzzle)
+            {
+                GameObject.FindObjectOfType<PlugPuzzle>().CheckPlug(endAnchor, currentPlug);
+                GetComponent<AudioSource>().Play();
+            }
             if (isOverload) GameObject.FindObjectOfType<OverloadSystem>().UnOverload();
+
+            if (!isPuzzle && useSound)
+            {
+                var audioSources = GetComponents<AudioSource>();
+                audioSources[1].Play();
+            }
             OnPlugged();
         }
     }
@@ -101,5 +113,7 @@ public class PlugController : MonoBehaviour
         wasPlugged = true;
         endAnchorRB.AddForce(transform.up * 50f, ForceMode.Impulse);
         vfx.GetComponent<ParticleSystem>().Play();
+        var audioSources = GetComponents<AudioSource>();
+        audioSources[0].Play();
     }
 }

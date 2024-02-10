@@ -17,7 +17,7 @@ public class CustomButton : MonoBehaviour
     public void Press()
     {
         GetComponent<Animator>().SetTrigger("Pressed");
-
+        GetComponent<AudioSource>().Play();
         buttonPressed.Invoke();
     }
 

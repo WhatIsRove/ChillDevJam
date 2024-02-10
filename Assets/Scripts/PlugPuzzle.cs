@@ -98,12 +98,12 @@ public class PlugPuzzle : MonoBehaviour
         if (!p1 || !p2 || !p3 || !p4)
         {
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(255,0,0,240));
-            completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color(191, 0, 0));
+            completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(191, 0, 0, 1));
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.red;
         } else
         {
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(0, 255, 0, 240));
-            completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color(0, 191, 0));
+            completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(0, 191, 0, 1));
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.green;
         }
     }

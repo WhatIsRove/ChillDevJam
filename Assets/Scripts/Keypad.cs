@@ -65,7 +65,7 @@ public class Keypad : MonoBehaviour
                 if (kpText.text == randomCode)
                 {
                     completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(0, 255, 0, 240));
-                    completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color(0, 191, 0));
+                    completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(0, 191, 0, 1));
                     completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.green;
                     puzzleCompleted = true;
                 } else
