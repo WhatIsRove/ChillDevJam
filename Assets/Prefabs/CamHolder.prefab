@@ -1656,6 +1656,7 @@ MonoBehaviour:
   isPuzzle: 0
   currentPlug: 0
   isOverload: 0
+  vfx: {fileID: 0}
 --- !u!65 &529969812643105254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1675,8 +1676,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1, y: 0.06, z: 0.06}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.33594772, y: 0.44938064, z: 0.17467277}
+  m_Center: {x: 0.008826756, y: -0.10885252, z: -0.05733641}
 --- !u!1 &5022362083022194086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,7 +2402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8464063191209836552}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0023286976, y: 0.08296191, z: -0.02234768, w: 0.99629945}
+  m_LocalRotation: {x: 0.01506283, y: 0.6614435, z: -0.018567218, w: 0.7496138}
   m_LocalPosition: {x: 1.1, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

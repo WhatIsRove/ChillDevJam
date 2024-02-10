@@ -30,6 +30,7 @@ public class PlugController : MonoBehaviour
 
     [Header("Overload")]
     public bool isOverload = false;
+    public GameObject vfx;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -99,5 +100,6 @@ public class PlugController : MonoBehaviour
         hasPlug = false;
         wasPlugged = true;
         endAnchorRB.AddForce(transform.up * 50f, ForceMode.Impulse);
+        vfx.GetComponent<ParticleSystem>().Play();
     }
 }
