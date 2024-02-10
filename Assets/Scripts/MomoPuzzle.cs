@@ -14,9 +14,34 @@ public class MomoPuzzle : MonoBehaviour
 
     List<int> buttonNums = new List<int>();
 
+    [HideInInspector]
+    public bool isOverloaded = false;
+
+    private void Start()
+    {
+        foreach (GameObject button in buttons)
+        {
+            switch (UnityEngine.Random.Range(0, 2))
+            {
+                case 0:
+                    button.GetComponent<MeshRenderer>().material.color = Color.red;
+                    button.GetComponent<CustomButton>().state = false;
+                    break;
+                case 1:
+                    button.GetComponent<MeshRenderer>().material.color = Color.green;
+                    button.GetComponent<CustomButton>().state = true;
+                    break;
+            }
+        }
+
+        buttons[0].GetComponent<MeshRenderer>().material.color = Color.red;
+        buttons[0].GetComponent<CustomButton>().state = false;
+    }
+
     public void AlternateButtons(int i)
     {
         if (puzzleCompleted) return;
+        if (isOverloaded) return;
 
         switch (i)
         {

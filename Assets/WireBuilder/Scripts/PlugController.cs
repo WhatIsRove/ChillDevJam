@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -23,6 +24,12 @@ public class PlugController : MonoBehaviour
     public bool wasPlugged = false;
     public float replugDistance = 0.5f;
 
+    [Header("Puzzle")]
+    public bool isPuzzle = false;
+    public int currentPlug;
+
+    [Header("Overload")]
+    public bool isOverload = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -40,6 +47,8 @@ public class PlugController : MonoBehaviour
             endAnchor.rotation = transform.rotation;
 
             hasPlug = true;
+            if (isPuzzle) GameObject.FindObjectOfType<PlugPuzzle>().CheckPlug(endAnchor, currentPlug);
+            if (isOverload) GameObject.FindObjectOfType<OverloadSystem>().UnOverload();
             OnPlugged();
         }
     }
@@ -60,22 +69,28 @@ public class PlugController : MonoBehaviour
                 endAnchorRB.isKinematic = false;
                 hasPlug = false;
                 wasPlugged = true;
+                if (isOverload) GameObject.FindObjectOfType<OverloadSystem>().OverloadEverything(false);
             }
         }
 
         if (Vector3.Distance(transform.position, endAnchor.position) > replugDistance && wasPlugged)
         {
+            if (isPuzzle) GameObject.FindObjectOfType<PlugPuzzle>().UnPlug(currentPlug);
             wasPlugged = false;
         }
-    }
-
-    private void FixedUpdate()
-    {
-        
     }
 
     public void OnPlugged()
     {
         OnWirePlugged.Invoke();
+    }
+
+    public void Yeet()
+    {
+        isConected = false;
+        endAnchorRB.isKinematic = false;
+        hasPlug = false;
+        wasPlugged = true;
+        endAnchorRB.AddForce(transform.up * 50f, ForceMode.Impulse);
     }
 }

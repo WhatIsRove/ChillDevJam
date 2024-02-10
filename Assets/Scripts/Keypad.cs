@@ -8,25 +8,23 @@ public class Keypad : MonoBehaviour
     public TextMeshProUGUI kpText;
     public GameObject completionLight;
 
-    int randomCode;
+    string randomCode;
     bool puzzleCompleted = false;
+    [HideInInspector]
+    public bool isOverloaded = false;
 
     void Start()
     {
-        randomCode = Random.Range(0, 999);
-        kpText.text = randomCode.ToString("000");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        randomCode = Random.Range(0, 999).ToString("000");
+        kpText.text = randomCode;
     }
 
     public void KeypadPress(int i)
     {
         if (puzzleCompleted) return;
+        if (isOverloaded) return;
         if (kpText.text.Length >= 3 && i < 10) return;
+
         switch (i)
         {
             case 0:
@@ -64,7 +62,7 @@ public class Keypad : MonoBehaviour
                 kpText.text = kpText.text.Remove(kpText.text.Length-1);
                 break;
             case 11:
-                if (kpText.text == randomCode.ToString())
+                if (kpText.text == randomCode)
                 {
                     completionLight.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", Color.green);
                     puzzleCompleted = true;

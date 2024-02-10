@@ -11,8 +11,6 @@ public class Grabbable : MonoBehaviour
 
     public bool grabbed = false;
 
-    Vector3 lastVelocity;
-
     void Start()
     {
         rb = GetComponent<Rigidbody>();
