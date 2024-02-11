@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlugPuzzle : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class PlugPuzzle : MonoBehaviour
 
     [HideInInspector]
     public bool isOverloaded = false;
+
+    [ColorUsageAttribute(true, true, 0f, 8f, 0.125f, 3f)]
+    public Color colorHDR;
 
     void Start()
     {
@@ -52,6 +56,7 @@ public class PlugPuzzle : MonoBehaviour
             plugColors[randomPlugs[i]].material.color = colors[i];
             socketColors[randomSockets[i]].material.color = colors[i];
         }
+
     }
 
     public void CheckPlug(Transform go, int i)
@@ -98,13 +103,14 @@ public class PlugPuzzle : MonoBehaviour
         if (!p1 || !p2 || !p3 || !p4)
         {
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(255,0,0,240));
-            completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(191, 0, 0, 1));
+            completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", colorHDR);
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.red;
         } else
         {
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(0, 255, 0, 240));
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(0, 191, 0, 1));
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.green;
+            completionLight.GetComponent<AudioSource>().Play();
         }
     }
 

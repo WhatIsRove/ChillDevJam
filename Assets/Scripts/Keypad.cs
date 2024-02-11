@@ -13,10 +13,26 @@ public class Keypad : MonoBehaviour
     [HideInInspector]
     public bool isOverloaded = false;
 
+    public GameObject[] clues;
+
     void Start()
     {
         randomCode = Random.Range(0, 999).ToString("000");
-        kpText.text = randomCode;
+        //kpText.text = randomCode;
+
+        for (int i = 0; i < clues.Length; i++)
+        {
+            clues[i].SetActive(false);
+        }
+
+        for (int i = 0; i < clues.Length; i++)
+        {
+            if (randomCode.Contains(i.ToString()))
+            {
+                clues[i].SetActive(true);
+            }
+        }
+        
     }
 
     public void KeypadPress(int i)
@@ -67,6 +83,7 @@ public class Keypad : MonoBehaviour
                     completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(0, 255, 0, 240));
                     completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(0, 191, 0, 1));
                     completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.green;
+                    completionLight.GetComponent<AudioSource>().Play();
                     puzzleCompleted = true;
                 } else
                 {

@@ -17,6 +17,10 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
 
+    public GameObject footSound;
+    public float stepRate;
+    float lastStepTaken;
+
     Vector3 moveDir;
     Vector3 moveInput;
     Rigidbody rb;
@@ -58,6 +62,17 @@ public class PlayerController : MonoBehaviour
         camera.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
         transform.rotation = Quaternion.Euler(0, rotation.y, 0);
 
+        if (moveInput.magnitude > 0 && rb.velocity.magnitude > 1 && Time.time - lastStepTaken > 1 / stepRate)
+        {
+            footSound.GetComponent<AudioSource>().pitch = Random.Range(0.80f, 0.9f);
+            footSound.GetComponent<AudioSource>().volume = Random.Range(0.1f, 0.25f);
+            footSound.GetComponent<AudioSource>().Play();
+            lastStepTaken = Time.time;
+        }
+        else if (moveInput.magnitude == 0)
+        {
+            footSound.GetComponent<AudioSource>().Stop();
+        }
 
         HandleGrab();
         HandlePress();

@@ -105,6 +105,7 @@ public class MomoPuzzle : MonoBehaviour
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(0, 255, 0, 240));
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(0, 191, 0, 1));
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.green;
+            completionLight.GetComponent<AudioSource>().Play();
             puzzleCompleted = true;
         }
             
