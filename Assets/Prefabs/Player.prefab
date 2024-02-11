@@ -478,7 +478,7 @@ MonoBehaviour:
   grabDistance: 3
   grabLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   grabPoint: {fileID: 6325334566301442748}
   pressAction: {fileID: 3020043307122411206, guid: cd550b605b7ab124c91b46afa9353788, type: 3}
 --- !u!54 &11591733081284746

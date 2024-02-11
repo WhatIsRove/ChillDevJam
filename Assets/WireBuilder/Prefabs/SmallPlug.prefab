@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3749660499205985923}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 3749660500698215857}
   - component: {fileID: 3749660500698215856}
   - component: {fileID: 4810950010921481706}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: SmallPlug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,6 +89,11 @@ MonoBehaviour:
   wireController: {fileID: 0}
   wasPlugged: 0
   replugDistance: 0.18
+  isPuzzle: 0
+  currentPlug: 0
+  isOverload: 0
+  vfx: {fileID: 0}
+  useSound: 0
 --- !u!65 &4810950010921481706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -158,9 +163,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 28dee90797170d045832ffa1ddafa96e, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28dee90797170d045832ffa1ddafa96e, type: 3}
       propertyPath: m_Name
       value: Plug_Female
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 28dee90797170d045832ffa1ddafa96e, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7071182760956848314, guid: 28dee90797170d045832ffa1ddafa96e, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -170,6 +183,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fec6200f09fc8b44b97a8d443adae2dc, type: 2}
+    - target: {fileID: 8513859187771203891, guid: 28dee90797170d045832ffa1ddafa96e, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

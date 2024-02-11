@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 2476436208095771028}
   - component: {fileID: 8801014578633411268}
   - component: {fileID: 8429240308553285748}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: wireHider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8391222552659086748, guid: 3df8920c2f6b5434d854f05ed2fdddde, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 3df8920c2f6b5434d854f05ed2fdddde, type: 3}
       propertyPath: m_Materials.Array.size
@@ -419,7 +419,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 60ffac31ec7480f43b1c43e62dfe02d1, type: 2}
     - target: {fileID: -516098083770646512, guid: 3df8920c2f6b5434d854f05ed2fdddde, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3df8920c2f6b5434d854f05ed2fdddde, type: 3}
       propertyPath: m_Name
@@ -427,11 +427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3df8920c2f6b5434d854f05ed2fdddde, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8416272007918961125, guid: 3df8920c2f6b5434d854f05ed2fdddde, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
