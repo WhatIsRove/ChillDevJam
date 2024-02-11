@@ -4,9 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Lights
   - OnSwitch
   - OffSwitch
+=======
+  - Plug
+  - Button
+>>>>>>> 92ba2fcb62882c150ffe86681d642623d407b008
   layers:
   - Default
   - TransparentFX
@@ -16,9 +21,15 @@ TagManager:
   - UI
   - Ground
   - Interactable
+<<<<<<< HEAD
   - Mopping
   - LightSwitch
   - 
+=======
+  - Wire
+  - Plug
+  - PostProcessing
+>>>>>>> 92ba2fcb62882c150ffe86681d642623d407b008
   - 
   - 
   - 

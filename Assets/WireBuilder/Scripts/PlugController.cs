@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -21,7 +22,17 @@ public class PlugController : MonoBehaviour
     
     bool hasPlug = false;
     public bool wasPlugged = false;
+    public float replugDistance = 0.5f;
 
+    [Header("Puzzle")]
+    public bool isPuzzle = false;
+    public int currentPlug;
+
+    [Header("Overload")]
+    public bool isOverload = false;
+    public GameObject vfx;
+
+    public bool useSound = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,13 +43,25 @@ public class PlugController : MonoBehaviour
             endAnchorRB = other.GetComponent<Rigidbody>();
             endAnchorGrabObj = other.GetComponent<Grabbable>();
 
-            endAnchorGrabObj.Drop();
+            if (endAnchorGrabObj != null) endAnchorGrabObj.Drop();
 
             endAnchorRB.isKinematic = true;
             endAnchor.position = plugPosition.position;
             endAnchor.rotation = transform.rotation;
 
             hasPlug = true;
+            if (isPuzzle)
+            {
+                GameObject.FindObjectOfType<PlugPuzzle>().CheckPlug(endAnchor, currentPlug);
+                GetComponent<AudioSource>().Play();
+            }
+            if (isOverload) GameObject.FindObjectOfType<OverloadSystem>().UnOverload();
+
+            if (!isPuzzle && useSound)
+            {
+                var audioSources = GetComponents<AudioSource>();
+                audioSources[1].Play();
+            }
             OnPlugged();
         }
     }
@@ -53,28 +76,44 @@ public class PlugController : MonoBehaviour
             Vector3 eulerRotation = new Vector3(this.transform.eulerAngles.x + 90, this.transform.eulerAngles.y, this.transform.eulerAngles.z);
             endAnchor.transform.rotation = Quaternion.Euler(eulerRotation);
 
-            if (endAnchorGrabObj.grabbed && !wasPlugged)
+            if (endAnchorGrabObj != null)
             {
-                isConected = false;
-                endAnchorRB.isKinematic = false;
-                hasPlug = false;
-                wasPlugged = true;
+                if (endAnchorGrabObj.grabbed && !wasPlugged)
+                {
+                    isConected = false;
+                    endAnchorRB.isKinematic = false;
+                    hasPlug = false;
+                    wasPlugged = true;
+                    if (isOverload) GameObject.FindObjectOfType<OverloadSystem>().OverloadEverything(false);
+                }
+            }
+            
+        }
+
+        if (endAnchor != null)
+        {
+            if (Vector3.Distance(transform.position, endAnchor.position) > replugDistance && wasPlugged)
+            {
+                if (isPuzzle) GameObject.FindObjectOfType<PlugPuzzle>().UnPlug(currentPlug);
+                wasPlugged = false;
             }
         }
-
-        if (Vector3.Distance(transform.position, endAnchor.position) > 0.5f && wasPlugged)
-        {
-            wasPlugged = false;
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        
     }
 
     public void OnPlugged()
     {
         OnWirePlugged.Invoke();
+    }
+
+    public void Yeet()
+    {
+        isConected = false;
+        endAnchorRB.isKinematic = false;
+        hasPlug = false;
+        wasPlugged = true;
+        endAnchorRB.AddForce(transform.up * 50f, ForceMode.Impulse);
+        vfx.GetComponent<ParticleSystem>().Play();
+        var audioSources = GetComponents<AudioSource>();
+        audioSources[0].Play();
     }
 }

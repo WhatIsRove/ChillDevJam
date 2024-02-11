@@ -17,6 +17,10 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
 
+    public GameObject footSound;
+    public float stepRate;
+    float lastStepTaken;
+
     Vector3 moveDir;
     Vector3 moveInput;
     Rigidbody rb;
@@ -30,6 +34,12 @@ public class PlayerController : MonoBehaviour
     bool isGrabbing = false;
     RaycastHit grabHit;
     Grabbable grabbableObj;
+
+    [Header("Press")]
+    public InputActionReference pressAction;
+
+    bool isPressed = false;
+    RaycastHit pressHit;
     
 
     void Start()
@@ -52,26 +62,20 @@ public class PlayerController : MonoBehaviour
         camera.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
         transform.rotation = Quaternion.Euler(0, rotation.y, 0);
 
-        grabAction.action.performed += _ => { isGrabbing = true; };
-        grabAction.action.canceled += _ => { isGrabbing = false; };
-
-        if (isGrabbing)
+        if (moveInput.magnitude > 0 && rb.velocity.magnitude > 1 && Time.time - lastStepTaken > 1 / stepRate)
         {
-            if (Physics.Raycast(camera.transform.position, camera.transform.forward, out grabHit, grabDistance, grabLayer) && grabbableObj == null)
-            {
-                if (grabHit.transform.TryGetComponent(out grabbableObj))
-                {
-                    grabbableObj.Grab(grabPoint);
-                }
-            }
-        } else
-        {
-            if (grabbableObj != null)
-            {
-                grabbableObj.Drop();
-                grabbableObj = null;
-            }
+            footSound.GetComponent<AudioSource>().pitch = Random.Range(0.80f, 0.9f);
+            footSound.GetComponent<AudioSource>().volume = Random.Range(0.1f, 0.25f);
+            footSound.GetComponent<AudioSource>().Play();
+            lastStepTaken = Time.time;
         }
+        else if (moveInput.magnitude == 0)
+        {
+            footSound.GetComponent<AudioSource>().Stop();
+        }
+
+        HandleGrab();
+        HandlePress();
     }
 
     private void FixedUpdate()
@@ -86,6 +90,49 @@ public class PlayerController : MonoBehaviour
         {
             var limitedVelocity = velocity.normalized * moveSpeed;
             rb.velocity = new Vector3(limitedVelocity.x, rb.velocity.y, limitedVelocity.z);
+        }
+    }
+
+    void HandleGrab()
+    {
+        grabAction.action.performed += _ => { isGrabbing = true; };
+        grabAction.action.canceled += _ => { isGrabbing = false; };
+
+        if (isGrabbing)
+        {
+            if (Physics.Raycast(camera.transform.position, camera.transform.forward, out grabHit, grabDistance, grabLayer) && grabbableObj == null)
+            {
+                if (grabHit.transform.TryGetComponent(out grabbableObj))
+                {
+                    grabbableObj.Grab(grabPoint);
+                }
+            }
+        }
+        else
+        {
+            if (grabbableObj != null)
+            {
+                grabbableObj.Drop();
+                grabbableObj = null;
+            }
+        }
+    }
+
+    void HandlePress()
+    {
+        pressAction.action.performed += _ => { isPressed = true; };
+        pressAction.action.canceled += _ => { isPressed = false; };
+
+        if (isPressed)
+        {
+            if (Physics.Raycast(camera.transform.position, camera.transform.forward, out pressHit, grabDistance, grabLayer))
+            {
+                if (pressHit.transform.TryGetComponent(out CustomButton buttonObj))
+                {
+                    buttonObj.Press();
+                    isPressed = false;
+                }
+            }
         }
     }
 

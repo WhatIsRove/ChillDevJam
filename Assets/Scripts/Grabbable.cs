@@ -7,7 +7,7 @@ public class Grabbable : MonoBehaviour
     Rigidbody rb;
     Transform grabPoint;
 
-    public float lerpSpeed = 10f;
+    public float grabSpeed = 10f;
 
     public bool grabbed = false;
 
@@ -20,8 +20,8 @@ public class Grabbable : MonoBehaviour
     {
         if (grabPoint != null)
         {
-            Vector3 lerpPosition = Vector3.Lerp(transform.position, grabPoint.position, Time.fixedDeltaTime * lerpSpeed);
-            rb.MovePosition(lerpPosition);
+            Vector3 targetPos = grabPoint.position - transform.position;
+            rb.velocity = new Vector3(targetPos.x, targetPos.y, targetPos.z) * grabSpeed;
         }
     }
 
@@ -29,13 +29,15 @@ public class Grabbable : MonoBehaviour
     {
         this.grabPoint = grabPoint;
         rb.useGravity = false;
+        rb.drag = 5;
         grabbed = true;
     }
 
     public void Drop()
     {
-        this.grabPoint = null;
+        grabPoint = null;
         rb.useGravity = true;
+        rb.drag = 0;
         grabbed = false;
     }
 }

@@ -33,7 +33,7 @@ public class Highlight : MonoBehaviour
         {
             if (highlight)
             {
-                materials[1].SetFloat("_Scale", 1.04f);
+                materials[1].SetFloat("_Scale", 1.05f);
             }
             else
             {
@@ -47,7 +47,7 @@ public class Highlight : MonoBehaviour
             {
                 foreach (Material[] materials in childrenMaterials)
                 {
-                    materials[1].SetFloat("_Scale", 1.04f);
+                    materials[1].SetFloat("_Scale", 1.05f);
                 }
 
             }

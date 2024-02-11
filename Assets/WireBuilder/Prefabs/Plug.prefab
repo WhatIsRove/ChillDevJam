@@ -142,7 +142,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3749660499205985923}
@@ -168,7 +168,9 @@ MonoBehaviour:
   plugPosition: {fileID: 3749660499205985923}
   endAnchor: {fileID: 0}
   endAnchorRB: {fileID: 0}
+  endAnchorGrabObj: {fileID: 0}
   wireController: {fileID: 0}
+  wasPlugged: 0
 --- !u!65 &4810950010921481706
 BoxCollider:
   m_ObjectHideFlags: 0
