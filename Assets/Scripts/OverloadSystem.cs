@@ -9,6 +9,9 @@ public class OverloadSystem : MonoBehaviour
     public Slider slider;
     public float startOverloadValue = 0.1f;
     float currentOverloadValue;
+    public RectMask2D uiMask;
+    float maxUpMask;
+    float initialUpMask;
 
     public float overloadSpeed = 1f;
 
@@ -24,7 +27,9 @@ public class OverloadSystem : MonoBehaviour
     void Start()
     {
         currentOverloadValue = startOverloadValue;
-        slider.value = currentOverloadValue;
+
+        maxUpMask = uiMask.rectTransform.rect.height - uiMask.padding.w - uiMask.padding.y;
+        initialUpMask = uiMask.padding.w;
     }
 
     void Update()
@@ -36,7 +41,12 @@ public class OverloadSystem : MonoBehaviour
 
         if (currentOverloadValue < 100) currentOverloadValue += overloadSpeed * Time.deltaTime;
 
-        slider.value = currentOverloadValue;
+        var targetHeight = currentOverloadValue * maxUpMask / 100;
+        var newUpMask = (maxUpMask + initialUpMask - targetHeight) * 0.5617638f;
+        var padding = uiMask.padding;
+
+        padding.w = newUpMask;
+        uiMask.padding = padding;
     }
 
     public void OverloadEverything(bool yeet)
@@ -44,7 +54,7 @@ public class OverloadSystem : MonoBehaviour
         currentOverloadValue = 100f;
         if (yeet) socket.Yeet();
         GameObject.FindObjectOfType<Keypad>().isOverloaded = true;
-        GameObject.FindObjectOfType<MomoPuzzle>().isOverloaded = true;
+        buttonPuzzle.isOverloaded = true;
         GameObject.FindObjectOfType<PlugPuzzle>().isOverloaded = true;
 
         wasOverloaded = true;

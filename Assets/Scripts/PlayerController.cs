@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
         pressAction.action.performed += _ => { isPressed = true; };
         pressAction.action.canceled += _ => { isPressed = false; };
 
-        if (isPressed)
+        if (isPressed && grabbableObj == null)
         {
             if (Physics.Raycast(camera.transform.position, camera.transform.forward, out pressHit, grabDistance, grabLayer))
             {
