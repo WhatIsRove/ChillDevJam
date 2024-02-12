@@ -15,6 +15,7 @@ public class PlugPuzzle : MonoBehaviour
     public bool p4 = false;
 
     public GameObject completionLight;
+    public bool puzzleCompleted = false;
 
     [HideInInspector]
     public bool isOverloaded = false;
@@ -105,12 +106,14 @@ public class PlugPuzzle : MonoBehaviour
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(255,0,0,240));
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", colorHDR);
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.red;
+            puzzleCompleted = false;
         } else
         {
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(0, 255, 0, 240));
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(0, 191, 0, 1));
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.green;
             completionLight.GetComponent<AudioSource>().Play();
+            puzzleCompleted = true;
         }
     }
 

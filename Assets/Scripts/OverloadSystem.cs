@@ -19,6 +19,8 @@ public class OverloadSystem : MonoBehaviour
     public MeshRenderer[] completionLights;
     public TextMeshProUGUI keypadText;
 
+    public MomoPuzzle buttonPuzzle;
+
     void Start()
     {
         currentOverloadValue = startOverloadValue;
@@ -53,7 +55,7 @@ public class OverloadSystem : MonoBehaviour
         currentOverloadValue = startOverloadValue;
 
         GameObject.FindObjectOfType<Keypad>().isOverloaded = false;
-        GameObject.FindObjectOfType<MomoPuzzle>().isOverloaded = false;
+        buttonPuzzle.isOverloaded = false;
         GameObject.FindObjectOfType<PlugPuzzle>().isOverloaded = false;
 
         wasOverloaded = false;

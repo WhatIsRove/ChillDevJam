@@ -10,7 +10,7 @@ public class MomoPuzzle : MonoBehaviour
 
     public GameObject completionLight;
 
-    bool puzzleCompleted = false;
+    public bool puzzleCompleted = false;
 
     List<int> buttonNums = new List<int>();
 

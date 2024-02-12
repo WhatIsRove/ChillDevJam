@@ -9,7 +9,7 @@ public class Keypad : MonoBehaviour
     public GameObject completionLight;
 
     string randomCode;
-    bool puzzleCompleted = false;
+    public bool puzzleCompleted = false;
     [HideInInspector]
     public bool isOverloaded = false;
 
