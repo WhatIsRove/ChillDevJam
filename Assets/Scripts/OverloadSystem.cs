@@ -24,6 +24,8 @@ public class OverloadSystem : MonoBehaviour
 
     public MomoPuzzle buttonPuzzle;
 
+    bool voiced = false;
+
     void Start()
     {
         currentOverloadValue = startOverloadValue;
@@ -52,7 +54,16 @@ public class OverloadSystem : MonoBehaviour
     public void OverloadEverything(bool yeet)
     {
         currentOverloadValue = 100f;
-        if (yeet) socket.Yeet();
+        if (yeet)
+        {
+            socket.Yeet();
+            if (!voiced)
+            {
+                StartCoroutine(GetComponent<StartShenanigans>().Voices(2));
+                voiced = true;
+            }
+            
+        }
         GameObject.FindObjectOfType<Keypad>().isOverloaded = true;
         buttonPuzzle.isOverloaded = true;
         GameObject.FindObjectOfType<PlugPuzzle>().isOverloaded = true;

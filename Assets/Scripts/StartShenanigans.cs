@@ -31,9 +31,18 @@ public class StartShenanigans : MonoBehaviour
 
     bool hasFailed = false;
 
+    public GameObject compVoice;
+    AudioSource[] compVoices;
+    bool sixtySec = false;
+
+    public GameObject generalVoice;
+    AudioSource[] generalVoices;
+
     private void Start()
     {
         currentTime = timerDuration * 60;
+        compVoices = compVoice.GetComponents<AudioSource>();
+        generalVoices = generalVoice.GetComponents<AudioSource>();
     }
 
     private void Update()
@@ -54,6 +63,13 @@ public class StartShenanigans : MonoBehaviour
             if (currentTime >= 0) timerText.text = "T-" + minutes.ToString() + ":" + seconds.ToString("00") + "." + milliseconds.ToString("000");
         }
 
+        
+        if (currentTime <= 60 && !sixtySec)
+        {
+            StartCoroutine(Voices(1));
+            sixtySec = true;
+        }
+
         if (currentTime <= 0 && !hasFailed)
         {
             timerText.text = "T-0:00.000";
@@ -70,9 +86,62 @@ public class StartShenanigans : MonoBehaviour
             GetComponent<Animator>().SetTrigger("StartTransform");
             panelMaterial.material.EnableKeyword("_EMISSION");
             timerText.gameObject.SetActive(true);
+            StartCoroutine(Voices(0));
             GetComponent<OverloadSystem>().slider.gameObject.SetActive(true);
             hasStarted = true;
         }
+    }
+
+    public IEnumerator Voices(int i)
+    {
+        switch (i)
+        {
+            case 0:
+                //start
+                compVoices[0].Play();
+                yield return new WaitForSecondsRealtime(1.5f);
+                generalVoices[0].Play();
+                yield return new WaitForSecondsRealtime(5.4f);
+                generalVoices[1].Play();
+                yield return new WaitForSecondsRealtime(4.6f);
+                generalVoices[2].Play();
+                break;
+            case 1:
+                //hurry up
+                compVoices[2].Play();
+                yield return new WaitForSecondsRealtime(1.5f);
+                generalVoices[3].Play();
+                break;
+            case 2:
+                //overload
+                generalVoices[4].Play();
+                yield return new WaitForSecondsRealtime(1.5f);
+                break;
+            case 3:
+                //clue to wires
+                generalVoices[5].Play();
+                yield return new WaitForSecondsRealtime(1.5f);
+                break;
+            case 4:
+                //failure
+                compVoices[3].Play();
+                yield return new WaitForSecondsRealtime(3f);
+                generalVoices[6].Play();
+                break;
+            case 5:
+                //abort
+                compVoices[1].Play();
+                yield return new WaitForSecondsRealtime(1.9f);
+                generalVoices[7].Play();
+                break;
+            case 6:
+                //Divert power
+                compVoices[4].Play();
+                yield return new WaitForSecondsRealtime(4.8f);
+                generalVoices[8].Play();
+                break;
+        }
+        
     }
 
     public void EndShenanigans(int i)
@@ -85,16 +154,19 @@ public class StartShenanigans : MonoBehaviour
                     //Abort ending
                     alarm.GetComponent<Animator>().SetBool("Alarm", false);
                     GetComponent<OverloadSystem>().overloadSpeed = 0;
+                    StartCoroutine(Voices(5));
                     hasStarted = false;
                     break;
                 case 1:
-                    GetComponent<OverloadSystem>().overloadSpeed = 0;
-                    hasStarted = false;
                     //Divert power ending
+                    GetComponent<OverloadSystem>().overloadSpeed = 0;
+                    StartCoroutine(Voices(6));
+                    hasStarted = false;
                     break;
                 case 2:
                     //Run out of time
                     GetComponent<OverloadSystem>().overloadSpeed = 0;
+                    StartCoroutine(Voices(4));
                     break;
             }
 

@@ -14,6 +14,13 @@ public class PlugPuzzle : MonoBehaviour
     public bool p3 = false;
     public bool p4 = false;
 
+    bool ogP1 = false;
+    bool ogP2 = false;
+    bool ogP3 = false;
+    bool ogP4 = false;
+
+    bool techBros = false;
+
     public GameObject completionLight;
     public bool puzzleCompleted = false;
 
@@ -63,6 +70,25 @@ public class PlugPuzzle : MonoBehaviour
     public void CheckPlug(Transform go, int i)
     {
         Color plug = go.GetChild(0).GetChild(3).GetComponent<MeshRenderer>().material.color;
+        if (plug == socketColors[i - 1].material.color)
+        {
+            switch (i)
+            {
+                case 1:
+                    ogP1 = true;
+                    break;
+                case 2:
+                    ogP2 = true;
+                    break;
+                case 3:
+                    ogP3 = true;
+                    break;
+                case 4:
+                    ogP4 = true;
+                    break;
+            }
+        }
+
         for (int j = 0; j < colors.Length; j++)
         {
             if (plug == colors[j])
@@ -96,6 +122,8 @@ public class PlugPuzzle : MonoBehaviour
                     break;
             }
         }
+
+        
     }
 
     public void CheckColors()
@@ -107,6 +135,12 @@ public class PlugPuzzle : MonoBehaviour
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", colorHDR);
             completionLight.transform.GetChild(2).GetComponent<Light>().color = Color.red;
             puzzleCompleted = false;
+
+            if (ogP1 && ogP2 && ogP3 && ogP4 && !techBros)
+            {
+                StartCoroutine(FindObjectOfType<StartShenanigans>().Voices(3));
+                techBros = true;
+            }
         } else
         {
             completionLight.transform.GetChild(1).GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color32(0, 255, 0, 240));
@@ -123,15 +157,19 @@ public class PlugPuzzle : MonoBehaviour
         {
             case 1:
                 p1 = false;
+                ogP1 = false;
                 break;
             case 2:
                 p2 = false;
+                ogP2 = false;
                 break;
             case 3:
                 p3 = false;
+                ogP3 = false;
                 break;
             case 4:
                 p4 = false;
+                ogP4 = false;
                 break;
         }
         CheckColors();
