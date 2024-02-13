@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Lights
+  - OffSwitch
+  - OnSwitch
+  - Plug
+  - Button
+  - CrossFade
   layers:
   - Default
   - TransparentFX
@@ -11,12 +17,12 @@ TagManager:
   - 
   - Water
   - UI
+  - Ground
+  - Interactable
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Wire
+  - Plug
   - 
   - 
   - 

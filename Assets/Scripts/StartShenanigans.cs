@@ -10,7 +10,7 @@ public class StartShenanigans : MonoBehaviour
 {
     public GameObject alarm;
 
-    bool hasStarted = false;
+    public bool hasStarted = false;
 
     public Keypad keypadPuzzle;
     public MomoPuzzle buttonPuzzle;
@@ -37,6 +37,8 @@ public class StartShenanigans : MonoBehaviour
 
     public GameObject generalVoice;
     AudioSource[] generalVoices;
+
+    public GameObject gameImage;
 
     private void Start()
     {
@@ -125,8 +127,12 @@ public class StartShenanigans : MonoBehaviour
             case 4:
                 //failure
                 compVoices[3].Play();
-                yield return new WaitForSecondsRealtime(3f);
+                yield return new WaitForSecondsRealtime(2.74f);
+                compVoices[5].Play();
+                yield return new WaitForSecondsRealtime(0.26f);
                 generalVoices[6].Play();
+                yield return new WaitForSecondsRealtime(4.89f);
+                FindObjectOfType<AudioManager>().Play("Missile");
                 break;
             case 5:
                 //abort
@@ -139,6 +145,12 @@ public class StartShenanigans : MonoBehaviour
                 compVoices[4].Play();
                 yield return new WaitForSecondsRealtime(4.8f);
                 generalVoices[8].Play();
+                yield return new WaitForSecondsRealtime(3.5f);
+                compVoices[5].Play();
+                yield return new WaitForSecondsRealtime(5.15f);
+                FindObjectOfType<AudioManager>().Play("Missile");
+                yield return new WaitForSecondsRealtime(0.7f);
+                generalVoices[6].Play();
                 break;
         }
         
@@ -160,6 +172,7 @@ public class StartShenanigans : MonoBehaviour
                 case 1:
                     //Divert power ending
                     GetComponent<OverloadSystem>().overloadSpeed = 0;
+                    gameImage.SetActive(true);
                     StartCoroutine(Voices(6));
                     hasStarted = false;
                     break;

@@ -41,10 +41,10 @@ public class OverloadSystem : MonoBehaviour
             OverloadEverything(true);
         }
 
-        if (currentOverloadValue < 100) currentOverloadValue += overloadSpeed * Time.deltaTime;
+        if (currentOverloadValue < 100 && GetComponent<StartShenanigans>().hasStarted) currentOverloadValue += overloadSpeed * Time.deltaTime;
 
         var targetHeight = currentOverloadValue * maxUpMask / 100;
-        var newUpMask = (maxUpMask + initialUpMask - targetHeight) * 0.5617638f;
+        var newUpMask = (maxUpMask + initialUpMask - targetHeight) * 0.5617638f; //multiply by scale hardcoded
         var padding = uiMask.padding;
 
         padding.w = newUpMask;

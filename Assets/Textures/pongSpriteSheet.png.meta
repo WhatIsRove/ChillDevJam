@@ -1,0 +1,4197 @@
+fileFormatVersion: 2
+guid: 762409f30ef93bd4b993f308ac8869aa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pongSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af99f663b3239849ade0677488bfc82
+      internalID: -559268440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 9000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c258097f325ce43843b278ed5e473a
+      internalID: -307749846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 9000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f744247a8e69cb64f9a2e92ef5aa4ec9
+      internalID: 2074943007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 9000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fa3dbcf416b0d4e9cffc88fb610472
+      internalID: 146448956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 9000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9898f4099bf52247aba72d1e832b195
+      internalID: 26533930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d447528bdfda4c148a60f381c35c142b
+      internalID: -1599004672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 8750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d309e9f15eda24589afdce7f5323d4
+      internalID: -1294812737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 8750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5be50abf5f9534eaea48f2c3fd2572
+      internalID: 625838328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 8750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d720789ae0a9342962a9eff01a4f36
+      internalID: -1184560449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 8750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0eb46e360a2b6d48b8f8248cec7122f
+      internalID: -235400717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46ec533f9e02a14b8d9854e81a22e68
+      internalID: -805954873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 8500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be3e92c4e6858b44af0a922f2448e33
+      internalID: 563756382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 8500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d637091a72d08e4bba0a4e1d802da31
+      internalID: 1304909091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 8500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b75d0a0415ad6742979dd8ec4034287
+      internalID: -1702379844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 8500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd594f5b0a000084199cc830ddfe8e9f
+      internalID: 228681113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115466a606fd1bc40b368155e66b3857
+      internalID: 1383041787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 8250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657aef033ce6cc044a8ce777c4589475
+      internalID: -79943947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 8250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff70893798a765844ad52f009db73598
+      internalID: 964384711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 8250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737b6da224ca83a488dfe388b0130fe9
+      internalID: -838683438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 8250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc7c88e079ad6b4286da2d07a0a219d
+      internalID: 1261883581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250ec178c1f724e4fa98879e3b8973c2
+      internalID: 1130845422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 8000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612fc91d8c49cd64e8cddf75ee7ab541
+      internalID: 365725950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 8000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bee1a721454c644b4f9d03600e7a15
+      internalID: -283420195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 8000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393c7682aeb2943428fd34c2a9f3afa8
+      internalID: -469142747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 8000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c85dd5ec5736f419f103b0952bf7ba
+      internalID: -1382674895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010bb7a91a966414f8f569d1185531cb
+      internalID: -1388532085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 7750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b69bbc501ef166489802091c0423796
+      internalID: 657107968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 7750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e29c9a1acdf4346bfa0a178da05a9b
+      internalID: -2106813888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 7750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a351bdf97fed54e801757f1e02417f
+      internalID: -60082618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 7750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db3b4433c4312c4ba9b67aed1ae541f
+      internalID: -1013134980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ce2b8f89b7ba945b1840a1d023fab1
+      internalID: 1514253960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 7500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d664fffa6ab2b7348bb089fa97314a98
+      internalID: 897716454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 7500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee9e62a49d40da49a3a4c4ec9c0b2b4
+      internalID: -1698888273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 7500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46835855bc1231547bda81423666a487
+      internalID: -507996297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 7500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e493b34389ed147afb8912e10595fa
+      internalID: 1762208077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd6e56b94b6f544082b871a7d564822
+      internalID: -1461748471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 7250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bc2203d4b2c434cb68f47379f4a025
+      internalID: -1526904055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 7250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d29a13973947eb4bb04fbbfa9dbc089
+      internalID: 2025225922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 7250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31989c8eb485364f96d260072b58792
+      internalID: -1956108352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 7250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b64d98ba4ff0304dba780c45e1c8a39
+      internalID: -1063027435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a45e04126b6b246a6c36acddcff310
+      internalID: -327201932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 7000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcc67c301b24994fae460f193609a98
+      internalID: 1457470330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 7000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e980fd4b32c69b49a9d1f340f436ca8
+      internalID: 690900914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 7000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b20180a37e5bfc4dae6cded0659ca12
+      internalID: -792272751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 7000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca6a26d00599904a800d3faaa1e5266
+      internalID: -1575311684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0c7b4aac63e484a857e3f8e08796ce
+      internalID: 1146076485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 6750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262cf2c4d4fa1c84480f4aa6e7f67895
+      internalID: -1710475011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 6750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afb1bae85c3f854295bee9e62a10203
+      internalID: -1330213572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 6750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e513d6d9fffb8a4ea1a2aa5f8362ae2
+      internalID: -212585775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 6750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8ee9ad8b808d041afd5973eea8b6eb
+      internalID: 354764046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b1450142a4f3d41bc0adc839b6aa1a
+      internalID: -699461624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 6500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c76a32b7d3fdc498928a30fd06337a
+      internalID: 1230080789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 6500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc4f7030c75bba4286077717d01457e
+      internalID: 2090933187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 6500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d9d8406fd6ee84ab59642a34419b9b
+      internalID: -1000266882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 6500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4c71d650169904faa27db1b23b7e7c
+      internalID: 1459077832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a53e5c71d0068a4ea7d2cf2419487e7
+      internalID: 2143627346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 6250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98c43819eb529a48968d941548a546b
+      internalID: 505505918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 6250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7d207ae6ec9524d84b8e84e0244784
+      internalID: -1921512266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 6250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5db8b53c08b7046bd3837fc12e54ac
+      internalID: 361652377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 6250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff32fb7cda2ae2d429bff52455cf283a
+      internalID: -1740315759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5166d4d0752a334cb20cb6b027edeca
+      internalID: 1898325077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 6000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bac0166ba261f64294a8af2b641d7bc
+      internalID: -1612381706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 6000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6bca6ac68aea24db0a3b1a49a2dc1c
+      internalID: -284544002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 6000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4176e9d4d64f0a746bf1280ca98268fd
+      internalID: -537986019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 6000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a039588d6743a641977c0f19d81d17f
+      internalID: -1827631956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d745bcfcf2d3baa44a7ab81f10738b0a
+      internalID: 156150547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 5750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060da07ad935ba04aabb752a41fe5f08
+      internalID: 507662915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 5750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cb77b87befa304ebfed289c516fd87
+      internalID: 1592879692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 5750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b987ae1005e708b47a14d614c36d06b0
+      internalID: -1822657624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 5750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35e6c8909bc759408b405baa193be43
+      internalID: -694227583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cc3772233f8e748805986d5d723508
+      internalID: 10187241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 5500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d1d86e660624f4c9a76f09e008a02b
+      internalID: 1075707579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 5500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43ee0734c09ffe4aac41055d3f47eac
+      internalID: -832265129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 5500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bb02a6382693f43a04e36a58e6132e
+      internalID: 433986208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 5500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9dfab665c78ea4cabd83e7d5a91b4d
+      internalID: 1304511389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced083366528c5a42b9b43624c2a89d5
+      internalID: -1145995244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 5250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e199596bfae238149a253e7366fedada
+      internalID: 1861128298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 5250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81f1d904bf260047bdf1082b0a0902f
+      internalID: 713505571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 5250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688ab84cc8c47b043b65808d4f43c1da
+      internalID: 283104417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 5250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de9b0079157bc242a6b7622ea88b924
+      internalID: -929848528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5996a63b517cecd418e5f29fd30761e7
+      internalID: 2000488332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 5000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8ef73a3bd9b344ab2f960801eba5c1
+      internalID: -1201450995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 5000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c248bf0b481242469d537f73fc119ad
+      internalID: 1585597751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 5000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a6ddd8822d4c746a7ad315eaa35d3d
+      internalID: -250694715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 5000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43fddad5a54158489d3bfc76e8adc79
+      internalID: -327187182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54c494ac1479dd499d81cb4970952bc
+      internalID: 68797483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 4750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883216e800e89aa4b8c3c23162165e90
+      internalID: -1912382271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 4750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f310df17757e388428af4db4880c9b1a
+      internalID: -806150506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 4750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab37d9b1359509744985660fc4402f52
+      internalID: 553926569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 4750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec0e02cf98067d43bb5618eb8e5c45c
+      internalID: -1194326344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154845d1f08f46d47a5ea948e1a339ee
+      internalID: 1952071159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 4500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7acc28ef7d9b344b02b5348921b0f7
+      internalID: -131647603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 4500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abd16d7ea3cb1a47bf77f6a13033832
+      internalID: 55922726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 4500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9be3e42b9af238478425e25b79484e6
+      internalID: -702745231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 4500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b85991fa0d36f4a811a38dd9a95478
+      internalID: 2005126708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f72f84afbeb13442b3b7b2389f7542e
+      internalID: -1936755989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 4250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55251d65bd56fa948a6512873c74f783
+      internalID: 2070800865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 4250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cd6c390fec83a458232e71d062b3b6
+      internalID: -175999548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 4250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3787e1e0a43d7046a7bdfa989e19cc0
+      internalID: -1225428225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 4250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e895f85571559b40b5f9753cfa56941
+      internalID: 1760839401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac06e930d9bbe83469376c30578add0a
+      internalID: -1910086796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 4000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2951972243ef54382e32ad1d6856cf
+      internalID: -919561163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 4000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d2b86e8c26ad443b4f5ae2cf6ed42a
+      internalID: -1178602678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 4000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd455aa2dd7fc84296a496bb7f0ef95
+      internalID: 505968939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 4000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da5089c6ce80f74fb8974c719cb0794
+      internalID: 177847573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662619d23d0bd7d40a67f0ec33d7c4b7
+      internalID: 27413782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 3750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a4c17d5643cac4fa1ae87bc89e3d0c
+      internalID: -1270287475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 3750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b514fc44cd5b85d47b1f626e9ef7c7ac
+      internalID: 953130361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 3750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2626cba11760f2e449b4f57396d4ac2e
+      internalID: -1533537354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 3750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e914e83a7d57d4cb91f001ada276f1
+      internalID: -482823277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fd37c71c6a21e438357b8154e2c3bc
+      internalID: -829251033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 3500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadbc94f8a5987e4e8eb8fbc81cb8500
+      internalID: 1958365136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 3500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc10c4751cb41445abf75aae5ae19ee
+      internalID: 982549954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 3500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ff16b672566e8409e97efd3ffa548f
+      internalID: 1208621674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 3500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdf08a200e3c6649b5f3e73ae6a5f91
+      internalID: 419235606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe94fcc3222aa67488ec7641acca9d1a
+      internalID: -1889319541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 3250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00c5c35414e8d549a0775134655581a
+      internalID: -2129293926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 3250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca22d420effb7d84e97ba25867293ee2
+      internalID: -1630925950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 3250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa5a9d2198cc2546a136836337b51a6
+      internalID: 1902181933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 3250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc5b48897f51d94b8f92b900de07124
+      internalID: 292471711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99aac5e4e4909b4bb4c6cf9c4abb57e
+      internalID: 1609806230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_121
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 3000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c40f0104b993e543a8b53f0e3565b71
+      internalID: 814583587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_122
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 3000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e78695b2b7f104fa246a249d8a7a58
+      internalID: -898688625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_123
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 3000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7e9fa5c5b88e147a9b95e52396f31f
+      internalID: -1139669520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_124
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 3000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ab6384b5e382c468c6af19ff848170
+      internalID: -156587173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587f19c4429bc6d4593d0ef21462a14b
+      internalID: 959092197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_126
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deccc25b776fa5428251857c250d66d
+      internalID: 243900422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_127
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0796cc96494103448af133206b0ef4f
+      internalID: -1044943775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_128
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b096477e75f104a98cce403dc196b1
+      internalID: -749151660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_129
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 2750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf6256ad51a0d444a48a62b71a83967
+      internalID: 221128465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8e72a80026fc343ae2c729061cff3f
+      internalID: -1210846119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_131
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c0c4b0a4ad04c4da89e13763eb1097
+      internalID: -2053264700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_132
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba65e72af2e4276438711c1af04c007a
+      internalID: 964600104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_133
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9209f43c7f98dd4e93a5dd70fe34f07
+      internalID: -666706356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_134
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 2500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7028f21299ef634b87176ff19392119
+      internalID: 617414463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9772e14c1f456c488bcd13621f3b04c
+      internalID: 1226314589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_136
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d4b1cb6eb1d1b4db66d510558f9c27
+      internalID: -187035504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_137
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19dcb5ef419bbbe4cabd99bc959d4a7f
+      internalID: -361043044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_138
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621ad46cd8168ea48bf2f5990664c390
+      internalID: 52776915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_139
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 2250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3674d4ad1642074787fe023dcd1a65e
+      internalID: 1165607760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d71cc3cdcd8133419b8688523a1ae56
+      internalID: -2015128203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_141
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1513a7f3b89e6044bc386b2eaa31f8d
+      internalID: -1660243473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_142
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c46ecb5f3e925458ee48972ffb51f3
+      internalID: 1125629546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_143
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de38c739a579c84f9754c3cc586a849
+      internalID: -269067171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_144
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 2000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db574e848c80d07479d62186e1a02186
+      internalID: -1661576420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536c6a3f5e2d91b4798d9c689c1370ca
+      internalID: 422425470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_146
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e255359db1b9f8347bcee5570099c606
+      internalID: 2084813638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_147
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01e649f127c8e94ea442cb13e19408d
+      internalID: 794679675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_148
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1373fde8585af4f4aacf7be44fecd58a
+      internalID: 369234942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_149
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9204a797e378e4fb8d87f9078bb3b2
+      internalID: -2117365250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e59e90728050a04fb6141e40deb5bbb
+      internalID: -1630173827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_151
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffbdd042e673d04486e31c424d9bedd
+      internalID: 1065510420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_152
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c22c97632de4640b2fab05ad6d4fda
+      internalID: 918130912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_153
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f070177841b644f4dae0710d6451dcbe
+      internalID: 1100347592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_154
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38761315aa3620419a5b22bbcbfc2cd
+      internalID: 1779330824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_155
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e965b627f1388e443b0e6195c91ec32f
+      internalID: -1410075294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_156
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96ec60693b782b43b1518bd6b342ab4
+      internalID: -676336917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_157
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f64a8a36edcd14bbfb0d09a0fee02d
+      internalID: -821978583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_158
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33bffa4a9fba444fa92796ab60ab04e
+      internalID: -1457778644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_159
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756f12903d5dfba46bf68995da2df5dd
+      internalID: -169622469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7ca6de156e0c746bea1c20f1fd3a51
+      internalID: -236523053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_161
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8455e7fbabdffa4bbe850d00c4adb24
+      internalID: -644287005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_162
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b70d124171c09844b697d15d6164ab3
+      internalID: -750167002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_163
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ab410698316b643a5dde6c4bccf432
+      internalID: -2054356626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_164
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1000
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85907f86963b12640ad7b1e22dfe575c
+      internalID: -1502019957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_165
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bba0b1270508144a63f2f44943d388
+      internalID: -259612603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_166
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ca55999fad5dd40a320eac45daa178
+      internalID: -1649443040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_167
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60eaa6c60893454298fae34d5fcba59
+      internalID: 521949053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_168
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b982e90963f7e74e908eb2f5fc03a5e
+      internalID: 454512234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_169
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 750
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6b9741223028a4fa7e0bdf4cffdb50
+      internalID: -820174809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdae968b5dca8042a14f6ca77467069
+      internalID: -1958682965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_171
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39869d19d96cfe54992484a5753b14c4
+      internalID: -1015276696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_172
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c880a25ad301bfb40af6e851cc539f5b
+      internalID: -455788443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_173
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee85cb70ff1e699428fcd42b4609c35e
+      internalID: 1609057039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_174
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 500
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db052444142a4a458637e2742c279d2
+      internalID: 496284890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_175
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30d9b4547b06b0449a5bc042f2f703d
+      internalID: -2042848245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_176
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77b717cd28bf484384cabc743ae1db9
+      internalID: -1917803935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_177
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1242a26748d65d9418b35bf9b8bf542d
+      internalID: -327194865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_178
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8392fc8a4ddfb498901b7c0301602e
+      internalID: 1236305345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_179
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 250
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd30848b7e619a844a38c23df987cc28
+      internalID: 582534757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1362f531492192c4595fad5f2685dae5
+      internalID: 675278626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_181
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 0
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9da9e16acb6aa74494f5c652e203742
+      internalID: 403623999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_182
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 0
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfa4f02ddfbf00458aa7336fd1291de
+      internalID: 33299422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_183
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1518ce54b133e48bc05467a06eabf8
+      internalID: 2073488012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pongSpriteSheet_184
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 0
+        width: 370
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13b5f4e03d52df4793ff644fd2b707c
+      internalID: 2084344278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 945441db8e77f3c41a765b00a80e6688
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pongSpriteSheet_0: -559268440
+      pongSpriteSheet_1: -307749846
+      pongSpriteSheet_10: -805954873
+      pongSpriteSheet_100: -1910086796
+      pongSpriteSheet_101: -919561163
+      pongSpriteSheet_102: -1178602678
+      pongSpriteSheet_103: 505968939
+      pongSpriteSheet_104: 177847573
+      pongSpriteSheet_105: 27413782
+      pongSpriteSheet_106: -1270287475
+      pongSpriteSheet_107: 953130361
+      pongSpriteSheet_108: -1533537354
+      pongSpriteSheet_109: -482823277
+      pongSpriteSheet_11: 563756382
+      pongSpriteSheet_110: -829251033
+      pongSpriteSheet_111: 1958365136
+      pongSpriteSheet_112: 982549954
+      pongSpriteSheet_113: 1208621674
+      pongSpriteSheet_114: 419235606
+      pongSpriteSheet_115: -1889319541
+      pongSpriteSheet_116: -2129293926
+      pongSpriteSheet_117: -1630925950
+      pongSpriteSheet_118: 1902181933
+      pongSpriteSheet_119: 292471711
+      pongSpriteSheet_12: 1304909091
+      pongSpriteSheet_120: 1609806230
+      pongSpriteSheet_121: 814583587
+      pongSpriteSheet_122: -898688625
+      pongSpriteSheet_123: -1139669520
+      pongSpriteSheet_124: -156587173
+      pongSpriteSheet_125: 959092197
+      pongSpriteSheet_126: 243900422
+      pongSpriteSheet_127: -1044943775
+      pongSpriteSheet_128: -749151660
+      pongSpriteSheet_129: 221128465
+      pongSpriteSheet_13: -1702379844
+      pongSpriteSheet_130: -1210846119
+      pongSpriteSheet_131: -2053264700
+      pongSpriteSheet_132: 964600104
+      pongSpriteSheet_133: -666706356
+      pongSpriteSheet_134: 617414463
+      pongSpriteSheet_135: 1226314589
+      pongSpriteSheet_136: -187035504
+      pongSpriteSheet_137: -361043044
+      pongSpriteSheet_138: 52776915
+      pongSpriteSheet_139: 1165607760
+      pongSpriteSheet_14: 228681113
+      pongSpriteSheet_140: -2015128203
+      pongSpriteSheet_141: -1660243473
+      pongSpriteSheet_142: 1125629546
+      pongSpriteSheet_143: -269067171
+      pongSpriteSheet_144: -1661576420
+      pongSpriteSheet_145: 422425470
+      pongSpriteSheet_146: 2084813638
+      pongSpriteSheet_147: 794679675
+      pongSpriteSheet_148: 369234942
+      pongSpriteSheet_149: -2117365250
+      pongSpriteSheet_15: 1383041787
+      pongSpriteSheet_150: -1630173827
+      pongSpriteSheet_151: 1065510420
+      pongSpriteSheet_152: 918130912
+      pongSpriteSheet_153: 1100347592
+      pongSpriteSheet_154: 1779330824
+      pongSpriteSheet_155: -1410075294
+      pongSpriteSheet_156: -676336917
+      pongSpriteSheet_157: -821978583
+      pongSpriteSheet_158: -1457778644
+      pongSpriteSheet_159: -169622469
+      pongSpriteSheet_16: -79943947
+      pongSpriteSheet_160: -236523053
+      pongSpriteSheet_161: -644287005
+      pongSpriteSheet_162: -750167002
+      pongSpriteSheet_163: -2054356626
+      pongSpriteSheet_164: -1502019957
+      pongSpriteSheet_165: -259612603
+      pongSpriteSheet_166: -1649443040
+      pongSpriteSheet_167: 521949053
+      pongSpriteSheet_168: 454512234
+      pongSpriteSheet_169: -820174809
+      pongSpriteSheet_17: 964384711
+      pongSpriteSheet_170: -1958682965
+      pongSpriteSheet_171: -1015276696
+      pongSpriteSheet_172: -455788443
+      pongSpriteSheet_173: 1609057039
+      pongSpriteSheet_174: 496284890
+      pongSpriteSheet_175: -2042848245
+      pongSpriteSheet_176: -1917803935
+      pongSpriteSheet_177: -327194865
+      pongSpriteSheet_178: 1236305345
+      pongSpriteSheet_179: 582534757
+      pongSpriteSheet_18: -838683438
+      pongSpriteSheet_180: 675278626
+      pongSpriteSheet_181: 403623999
+      pongSpriteSheet_182: 33299422
+      pongSpriteSheet_183: 2073488012
+      pongSpriteSheet_184: 2084344278
+      pongSpriteSheet_19: 1261883581
+      pongSpriteSheet_2: 2074943007
+      pongSpriteSheet_20: 1130845422
+      pongSpriteSheet_21: 365725950
+      pongSpriteSheet_22: -283420195
+      pongSpriteSheet_23: -469142747
+      pongSpriteSheet_24: -1382674895
+      pongSpriteSheet_25: -1388532085
+      pongSpriteSheet_26: 657107968
+      pongSpriteSheet_27: -2106813888
+      pongSpriteSheet_28: -60082618
+      pongSpriteSheet_29: -1013134980
+      pongSpriteSheet_3: 146448956
+      pongSpriteSheet_30: 1514253960
+      pongSpriteSheet_31: 897716454
+      pongSpriteSheet_32: -1698888273
+      pongSpriteSheet_33: -507996297
+      pongSpriteSheet_34: 1762208077
+      pongSpriteSheet_35: -1461748471
+      pongSpriteSheet_36: -1526904055
+      pongSpriteSheet_37: 2025225922
+      pongSpriteSheet_38: -1956108352
+      pongSpriteSheet_39: -1063027435
+      pongSpriteSheet_4: 26533930
+      pongSpriteSheet_40: -327201932
+      pongSpriteSheet_41: 1457470330
+      pongSpriteSheet_42: 690900914
+      pongSpriteSheet_43: -792272751
+      pongSpriteSheet_44: -1575311684
+      pongSpriteSheet_45: 1146076485
+      pongSpriteSheet_46: -1710475011
+      pongSpriteSheet_47: -1330213572
+      pongSpriteSheet_48: -212585775
+      pongSpriteSheet_49: 354764046
+      pongSpriteSheet_5: -1599004672
+      pongSpriteSheet_50: -699461624
+      pongSpriteSheet_51: 1230080789
+      pongSpriteSheet_52: 2090933187
+      pongSpriteSheet_53: -1000266882
+      pongSpriteSheet_54: 1459077832
+      pongSpriteSheet_55: 2143627346
+      pongSpriteSheet_56: 505505918
+      pongSpriteSheet_57: -1921512266
+      pongSpriteSheet_58: 361652377
+      pongSpriteSheet_59: -1740315759
+      pongSpriteSheet_6: -1294812737
+      pongSpriteSheet_60: 1898325077
+      pongSpriteSheet_61: -1612381706
+      pongSpriteSheet_62: -284544002
+      pongSpriteSheet_63: -537986019
+      pongSpriteSheet_64: -1827631956
+      pongSpriteSheet_65: 156150547
+      pongSpriteSheet_66: 507662915
+      pongSpriteSheet_67: 1592879692
+      pongSpriteSheet_68: -1822657624
+      pongSpriteSheet_69: -694227583
+      pongSpriteSheet_7: 625838328
+      pongSpriteSheet_70: 10187241
+      pongSpriteSheet_71: 1075707579
+      pongSpriteSheet_72: -832265129
+      pongSpriteSheet_73: 433986208
+      pongSpriteSheet_74: 1304511389
+      pongSpriteSheet_75: -1145995244
+      pongSpriteSheet_76: 1861128298
+      pongSpriteSheet_77: 713505571
+      pongSpriteSheet_78: 283104417
+      pongSpriteSheet_79: -929848528
+      pongSpriteSheet_8: -1184560449
+      pongSpriteSheet_80: 2000488332
+      pongSpriteSheet_81: -1201450995
+      pongSpriteSheet_82: 1585597751
+      pongSpriteSheet_83: -250694715
+      pongSpriteSheet_84: -327187182
+      pongSpriteSheet_85: 68797483
+      pongSpriteSheet_86: -1912382271
+      pongSpriteSheet_87: -806150506
+      pongSpriteSheet_88: 553926569
+      pongSpriteSheet_89: -1194326344
+      pongSpriteSheet_9: -235400717
+      pongSpriteSheet_90: 1952071159
+      pongSpriteSheet_91: -131647603
+      pongSpriteSheet_92: 55922726
+      pongSpriteSheet_93: -702745231
+      pongSpriteSheet_94: 2005126708
+      pongSpriteSheet_95: -1936755989
+      pongSpriteSheet_96: 2070800865
+      pongSpriteSheet_97: -175999548
+      pongSpriteSheet_98: -1225428225
+      pongSpriteSheet_99: 1760839401
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
